@@ -333,7 +333,7 @@ fn render_debug_ui(
 ) {
     let x = game_state.camera.logical_screen_size.x - 48.0;
     let lines = [
-        ("FPS:", &format!("{:.}", metrics.fps_stats.fps)),
+        ("FPS:", &format!("{}", metrics.fps_stats.fps)),
         ("p50:", &format!("{:.1}ms", metrics.fps_stats.median_ms)),
         ("p100:", &format!("{:.1} ms", metrics.fps_stats.max_ms)),
         ("ping:", &format!("{:.1} ms", game_state.ping_rtt * 1000.0)),
